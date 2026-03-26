@@ -1,0 +1,187 @@
+{
+  "version": "2.0",
+  "created": "2026-03-25",
+  "profiles": {
+    "no-programador": {
+      "id": "no-programador",
+      "nombre": "No-programador",
+      "icono": "💼",
+      "descripcion": "Gente de negocios, writers, operadores. Quieres automatizar tareas sin escribir código.",
+      "vocabulario": {
+        "evitar": ["API", "CORS", "deploy", "framework", "refactorizar", "debuggear"],
+        "usar": ["herramienta", "conectar", "publicar", "estructura", "corregir", "revisar"],
+        "explicaciones_extra": true,
+        "analogias": true
+      },
+      "ejemplos_dominio": ["escritura", "negocios", "operaciones", "documentos"],
+      "casos_uso": [
+        "Crear SOPs de procesos",
+        "Automatizar reportes semanales",
+        "Analizar datos de ventas",
+        "Escribir documentos legales",
+        "Organizar notas y apuntes"
+      ],
+      "duracion_modulos": {
+        "M0": "5 min",
+        "M1": "25 min",
+        "M2": "30 min",
+        "M3": "25 min",
+        "M4": "30 min",
+        "M5": "30 min"
+      },
+      "duracion_total": "~2h 25min",
+      "dificultad_percibida": "media",
+      "recomendaciones": [
+        "Usa analogías del mundo real",
+        "Evita jerga técnica sin explicar",
+        "Enfócate en resultados, no en implementación"
+      ]
+    },
+    "junior-dev": {
+      "id": "junior-dev",
+      "nombre": "Programador Junior",
+      "icono": "👨‍💻",
+      "descripcion": "Programadores que quieren ser más productivos con IA. Sabes código pero quieres trabajar mejor.",
+      "vocabulario": {
+        "evitar": [],
+        "usar": ["API", "deploy", "framework", "refactorizar", "debuggear", "tests", "CI/CD"],
+        "explicaciones_extra": false,
+        "analogias": false
+      },
+      "ejemplos_dominio": ["software", "datos", "github", "web"],
+      "casos_uso": [
+        "Debuggear código con el critic",
+        "Refactorizar módulo legacy",
+        "Crear tests automatizados",
+        "Documentar código automáticamente",
+        "Generar boilerplate de proyectos"
+      ],
+      "duracion_modulos": {
+        "M0": "5 min",
+        "M1": "20 min",
+        "M2": "25 min",
+        "M3": "20 min",
+        "M4": "20 min",
+        "M5": "25 min"
+      },
+      "duracion_total": "~1h 55min",
+      "dificultad_percibida": "baja",
+      "recomendaciones": [
+        "Usa terminología técnica directamente",
+        "Enfócate en integración con herramientas existentes",
+        "Muestra ejemplos de código real"
+      ]
+    },
+    "consultor": {
+      "id": "consultor",
+      "nombre": "Consultor / Freelance",
+      "icono": "🎯",
+      "descripcion": "Gestionas múltiples proyectos y clientes. Necesitas eficiencia y trazabilidad.",
+      "vocabulario": {
+        "evitar": [],
+        "usar": ["cliente", "proyecto", "entregable", "deadline", "hubs", "clusters"],
+        "explicaciones_extra": false,
+        "analogias": true
+      },
+      "ejemplos_dominio": ["negocios", "datos", "estrategia", "operaciones"],
+      "casos_uso": [
+        "Análisis de datos de cliente (CSV → insights)",
+        "Generar propuestas comerciales",
+        "Seguir múltiples proyectos con hubs",
+        "Crear documentación para clientes",
+        "Automatizar reportes de estado"
+      ],
+      "duracion_modulos": {
+        "M0": "5 min",
+        "M1": "20 min",
+        "M2": "25 min",
+        "M3": "20 min",
+        "M4": "25 min",
+        "M5": "25 min"
+      },
+      "duracion_total": "~2h",
+      "dificultad_percibida": "media",
+      "recomendaciones": [
+        "Enfócate en multi-proyecto",
+        "Muestra cómo organizar por cliente",
+        "Destaca la trazabilidad y memoria"
+      ]
+    },
+    "equipo-pequeno": {
+      "id": "equipo-pequeno",
+      "nombre": "Equipo Pequeño",
+      "icono": "👥",
+      "descripcion": "Startups de 2-10 personas. Necesitas colaboración y conocimiento compartido.",
+      "vocabulario": {
+        "evitar": [],
+        "usar": ["equipo", "colaboración", "compartir", "onboarding", "SOP", "wiki"],
+        "explicaciones_extra": false,
+        "analogias": true
+      },
+      "ejemplos_dominio": ["operaciones", "conocimiento", "estrategia", "software"],
+      "casos_uso": [
+        "Onboarding de nuevo miembro",
+        "Retrospectiva de sprint",
+        "Documentación compartida",
+        "Base de conocimiento del equipo",
+        "Automatizar procesos internos"
+      ],
+      "duracion_modulos": {
+        "M0": "5 min",
+        "M1": "20 min",
+        "M2": "25 min",
+        "M3": "25 min",
+        "M4": "25 min",
+        "M5": "30 min"
+      },
+      "duracion_total": "~2h 10min",
+      "dificultad_percibida": "media",
+      "recomendaciones": [
+        "Enfócate en conocimiento compartido",
+        "Muestra cómo colaborar en equipo",
+        "Destaca la memoria institucional"
+      ]
+    },
+    "estudiante": {
+      "id": "estudiante",
+      "nombre": "Estudiante",
+      "icono": "📚",
+      "descripcion": "Aprendiendo a trabajar con IA. Quieres estudiar mejor y ser más eficiente.",
+      "vocabulario": {
+        "evitar": ["deploy", "CI/CD", "producción"],
+        "usar": ["aprender", "estudiar", "organizar", "resumir", "apuntes", "investigación"],
+        "explicaciones_extra": true,
+        "analogias": true
+      },
+      "ejemplos_dominio": ["conocimiento", "research", "escritura", "analisis"],
+      "casos_uso": [
+        "Resumir papers académicos",
+        "Organizar apuntes de clase",
+        "Preparar presentaciones",
+        "Investigar temas complejos",
+        "Escribir ensayos y trabajos"
+      ],
+      "duracion_modulos": {
+        "M0": "5 min",
+        "M1": "25 min",
+        "M2": "30 min",
+        "M3": "25 min",
+        "M4": "30 min",
+        "M5": "30 min"
+      },
+      "duracion_total": "~2h 25min",
+      "dificultad_percibida": "media-alta",
+      "recomendaciones": [
+        "Usa ejemplos académicos",
+        "Explica conceptos desde cero",
+        "Enfócate en aprendizaje y organización"
+      ]
+    }
+  },
+  "common": {
+    "modulos_compartidos": ["M0", "M1", "M2"],
+    "modulos_especificos": ["M3", "M4", "M5"],
+    "sistema_nombre": "Brain",
+    "promesa": "En 2 horas tienes tu sistema operativo de inteligencia funcionando"
+  }
+}

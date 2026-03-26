@@ -1,0 +1,329 @@
+{
+  "version": "2.1",
+  "lastUpdated": "2026-03-25",
+  "mod0": {
+    "title": "M0 — Bienvenida",
+    "content": "<div class='lesson'><h3>Bienvenido a {{NAME}} Academy</h3><p>Este recorrido está diseñado para que en <strong>{{DURACION_TOTAL}}</strong> entiendas, repliques y personalices un sistema completo de agentes inteligentes sobre Obsidian.</p><p>Al terminar, tendrás:</p><ul><li>Un sistema de agentes operativo en tu PC, con tu nombre</li><li>Comprensión profunda de cómo funciona cada pieza</li><li>La capacidad de adaptarlo a <strong>tu tipo de trabajo</strong>: {{EJEMPLOS_DOMINIO}}</li></ul><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);box-shadow:0 8px 32px rgba(59,130,246,0.2);'><div class='concept-label' style='color:var(--blue-400);text-shadow:0 0 10px rgba(59,130,246,0.5);'>Concepto clave</div><p>El sistema <strong>{{NAME}} Brain</strong> no es un chatbot. Es un <strong>sistema operativo de inteligencia</strong> que coordina 10 agentes especializados para ejecutar cualquier tarea con trazabilidad, calidad y memoria permanente.</p></div><h4>Qué vas a recorrer</h4><table><thead><tr><th>Módulo</th><th>Tema</th><th>Duración</th></tr></thead><tbody><tr><td>M0</td><td>Bienvenida y orientación</td><td>~5 min</td></tr><tr><td>M1</td><td>Arquitectura del sistema</td><td>{{DURACION_M1}}</td></tr><tr><td>M2</td><td>Los 10 agentes en detalle</td><td>{{DURACION_M2}}</td></tr><tr><td>M3</td><td>Memoria: Skills, Learnings y Clusters</td><td>{{DURACION_M3}}</td></tr><tr><td>M4</td><td>Setup portable en tu PC</td><td>{{DURACION_M4}}</td></tr><tr><td>M5</td><td>Tu primer ciclo completo</td><td>{{DURACION_M5}}</td></tr></tbody></table><p>Cada módulo incluye <strong>quizzes con feedback inmediato</strong> para que verifiques que has entendido lo esencial.</p></div><div class='lesson'><h3>Cómo funciona esta plataforma</h3><p>La experiencia está personalizada con tu nombre: <strong>{{NAME}}</strong>. Donde el sistema original dice \"Ntizar\", aquí verás tu nombre. Así aprendes construyendo <em>tu</em> sistema, no copiando uno ajeno.</p><p><strong>Controles:</strong></p><ul><li>Usa las <strong>pestañas de módulo</strong> arriba para navegar</li><li>El <strong>temporizador</strong> te indica cuánto tiempo llevas (no es un límite, es información)</li><li>Los <strong>quizzes</strong> te dan feedback inmediato — no cuentan para nota, son para aprender</li></ul><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);'><div class='concept-label'>Tu perfil: {{PERFIL_NOMBRE}}</div><p>{{PERFIL_DESCRIPCION}}</p><p><strong>Casos de uso que verás:</strong> {{CASOS_USO}}</p></div></div><div class='lesson'><button class='btn btn-primary btn-lg' data-next='mod1' style='box-shadow:0 0 30px rgba(59,130,246,0.4);'>Comenzar →</button></div>",
+    "quiz": null
+  },
+  "mod1": {
+    "title": "M1 — Arquitectura del Sistema",
+    "content": "<div class='lesson'><h3>M1 — El Sistema {{NAME}} Brain</h3><p>{{NAME}} Brain es un <strong>sistema de inteligencia operativa general</strong> construido sobre dos herramientas:</p><div class='grid grid-2 gap-4' style='margin:1rem 0;'><div class='card glass-standard glass-refract' style='padding:1.5rem;border:1px solid rgba(59,130,246,0.3);box-shadow:0 8px 32px rgba(59,130,246,0.2);'><div style='font-size:2rem;margin-bottom:0.5rem;'>📓</div><h4 style='color:var(--blue-400);margin-bottom:0.5rem;'>Obsidian</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Tu base de conocimiento con archivos Markdown enlazados. Los enlaces forman una red neuronal de información.</p></div><div class='card glass-standard glass-refract' style='padding:1.5rem;border:1px solid rgba(59,130,246,0.3);box-shadow:0 8px 32px rgba(59,130,246,0.2);'><div style='font-size:2rem;margin-bottom:0.5rem;'>🤖</div><h4 style='color:var(--blue-400);margin-bottom:0.5rem;'>OpenCode</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>El agente IA que ejecuta las instrucciones del sistema. Lee, escribe y coordina los 10 agentes.</p></div></div></div><div class='lesson'><h3>Tipos de Tarea Soportados</h3><p>El sistema no está limitado a programación. Puede ejecutar tareas de:</p><div class='mermaid' style='margin:2rem 0;text-align:center;'>\ngraph TD\n    A[HUMANO] --> B[01-classifier]\n    B --> C{Complejidad?}\n    C -->|Alta| D[02-explorer → 03-planner → 04-spec]\n    C -->|Media| E[03-planner → 04-spec]\n    C -->|Baja| F[05-implementer]\n    D --> G[05-implementer]\n    E --> G\n    F --> G\n    G --> H[06-reviewer]\n    H --> I{PASS?}\n    I -->|No| G\n    I -->|Sí| J[07-critic]\n    J --> K[08-synthesizer]\n    K --> L[HUMANO ✅]\n    L --> M[09-archiver]\n</div>\n\n<div class='flow-diagram' style='display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.75rem;margin:1.5rem 0;'><div class='flow-step blue glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(59,130,246,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(59,130,246,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>💻</div><div style='font-weight:600;font-size:var(--text-sm);'>Software</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>Código, debugging, arquitectura</div></div><div class='flow-step blue glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(59,130,246,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(59,130,246,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>🔍</div><div style='font-weight:600;font-size:var(--text-sm);'>Research</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>Análisis, síntesis, fuentes</div></div><div class='flow-step blue glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(59,130,246,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(59,130,246,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>📊</div><div style='font-weight:600;font-size:var(--text-sm);'>Estrategia</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>Planes, decisiones, roadmaps</div></div><div class='flow-step orange glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(249,115,22,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(249,115,22,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>✍️</div><div style='font-weight:600;font-size:var(--text-sm);'>Escritura</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>Documentos, emails, contenido</div></div><div class='flow-step orange glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(249,115,22,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(249,115,22,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>⚙️</div><div style='font-weight:600;font-size:var(--text-sm);'>Operaciones</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>Procesos, flujos, SOPs</div></div><div class='flow-step orange glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(249,115,22,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(249,115,22,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>🧠</div><div style='font-weight:600;font-size:var(--text-sm);'>Conocimiento</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>Taxonomías, mapas mentales</div></div><div class='flow-step green glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(34,197,94,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>💡</div><div style='font-weight:600;font-size:var(--text-sm);'>Creatividad</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>Brainstorming, conceptos</div></div><div class='flow-step green glass-standard' style='padding:1rem;text-align:center;border-radius:8px;cursor:pointer;transition:all 0.3s;border:1px solid rgba(34,197,94,0.2);' onmouseover=\"this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.3)'\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\"><div style='font-size:1.5rem;margin-bottom:0.25rem;'>📈</div><div style='font-weight:600;font-size:var(--text-sm);'>Análisis de datos</div><div style='font-size:var(--text-xs);color:var(--text-muted);margin-top:0.25rem;'>CSV, visualización, insights</div></div></div><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);margin-top:1.5rem;'><div class='concept-label'>Principio fundamental</div><p>El sistema es <strong>agnóstico al tipo de trabajo</strong>. La arquitectura funciona igual para {{EJEMPLO_RELEVANTE_1}}, {{EJEMPLO_RELEVANTE_2}} o {{EJEMPLO_RELEVANTE_3}}. Lo que cambia es el <em>flujo</em> que elige el classifier, no la estructura.</p></div></div><div class='lesson'><h3>Los 3 Pilares del Sistema</h3><div class='grid grid-3 gap-4' style='margin:1.5rem 0;'><div class='card glass-subtle' style='padding:1.25rem;border-left:3px solid var(--blue-500);'><h4 style='margin-bottom:0.5rem;color:var(--blue-400);'>1. Flujo Adaptable</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Cada tarea pasa por un flujo de agentes que se adapta a su complejidad. El <strong>classifier</strong> decide qué agentes participan.</p></div><div class='card glass-subtle' style='padding:1.25rem;border-left:3px solid var(--orange-500);'><h4 style='margin-bottom:0.5rem;color:var(--orange-400);'>2. Checkpoints</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>El humano interviene solo en puntos clave: <strong>después de SPEC</strong> (aprueba antes de implementar) y <strong>después de SYNTHESIZE</strong> (aprueba antes de archivar).</p></div><div class='card glass-subtle' style='padding:1.25rem;border-left:3px solid var(--green-500);'><h4 style='margin-bottom:0.5rem;color:var(--green-400);'>3. Memoria Permanente</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Cada ciclo queda registrado en learnings. El sistema <em>aprende</em> de cada tarea completada y reusa patrones.</p></div></div></div><div class='lesson'><h3>Para tu tipo de trabajo</h3><p>Como <strong>{{PERFIL_NOMBRE}}</strong>, te interesa saber que el sistema puede:</p><ul style='margin:1rem 0;padding-left:1.5rem;'>{{CASOS_USO_LIST}}</ul><p style='color:var(--text-muted);font-size:var(--text-sm);'>Verás ejemplos prácticos de esto en M5.</p></div><div class='lesson'><button class='btn btn-ghost' data-prev='mod0'>← Volver</button> <button class='btn btn-primary' data-next='mod2' style='box-shadow:0 0 30px rgba(59,130,246,0.4);'>Siguiente →</button></div>",
+    "quiz": {
+      "questions": [
+        {
+          "id": "q-1-1",
+          "text": "¿Qué dos herramientas forman la base del sistema?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Visual Studio Code + ChatGPT"
+            },
+            {
+              "value": "b",
+              "text": "Obsidian + OpenCode"
+            },
+            {
+              "value": "c",
+              "text": "Notion + Claude"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! Obsidian gestiona el conocimiento (archivos Markdown enlazados), OpenCode ejecuta las tareas (lee, escribe, coordina agentes)."
+        },
+        {
+          "id": "q-1-2",
+          "text": "¿Cuándo interviene el humano en el flujo?",
+          "options": [
+            {
+              "value": "a",
+              "text": "En cada paso del proceso"
+            },
+            {
+              "value": "b",
+              "text": "Solo al inicio y al final"
+            },
+            {
+              "value": "c",
+              "text": "Después de SPEC y después de SYNTHESIZE"
+            }
+          ],
+          "correct": "c",
+          "feedback": "Exacto! El humano aprueba la spec antes de implementar (evita trabajo incorrecto) y el resultado antes de archivar (control de calidad final)."
+        },
+        {
+          "id": "q-1-3",
+          "text": "¿Qué agente decide qué flujo seguir según la tarea?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Orchestrator"
+            },
+            {
+              "value": "b",
+              "text": "Classifier"
+            },
+            {
+              "value": "c",
+              "text": "Planner"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! El classifier detecta el tipo de tarea (software, escritura, operaciones, etc.) y diseña el flujo apropiado (largo, medio o corto)."
+        }
+      ]
+    }
+  },
+  "mod2": {
+    "title": "M2 — Los 10 Agentes",
+    "content": "<div class='lesson'><h3>M2 — Los Agentes de {{NAME}} Brain</h3><p>El sistema tiene <strong>10 agentes especializados</strong> más un <strong>coordinador</strong> (orchestrator). Cada uno tiene una misión única, un formato de input/output definido, y un nivel de capacidad mínima documentado.</p><p>Piensa en ellos como un equipo donde cada miembro tiene un rol claro. Nadie hace el trabajo de otro.</p></div><div class='lesson'><h3>El Orchestrator — El Coordinador</h3><div class='agent-card glass-standard glass-refract' style='padding:1.5rem;margin-bottom:1.5rem;border:1px solid rgba(59,130,246,0.3);box-shadow:0 8px 32px rgba(59,130,246,0.2);'><div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;'><div><div class='agent-id' style='font-family:monospace;font-size:var(--text-sm);color:var(--blue-400);margin-bottom:0.25rem;'>00-orchestrator.md</div><div class='agent-name' style='font-size:var(--text-xl);font-weight:700;color:var(--text-primary);'>Orchestrator</div></div><div class='agent-level'><span class='badge badge-blue' style='background:rgba(59,130,246,0.2);color:var(--blue-300);padding:0.25rem 0.75rem;border-radius:999px;font-size:var(--text-xs);font-weight:600;'>Nivel: ALTO — no degradable</span></div></div><div class='agent-desc' style='color:var(--text-secondary);margin-bottom:1rem;line-height:1.6;'>Coordina el flujo completo. No hace trabajo especializado — su misión es: entender, decidir flujo, delegar, validar y cerrar. Mantiene el estado de sesión actualizado en todo momento.</div><div style='background:rgba(59,130,246,0.1);padding:1rem;border-radius:8px;'><div style='font-weight:600;margin-bottom:0.5rem;color:var(--blue-400);font-size:var(--text-sm);'>Capacidades exclusivas:</div><ul style='margin:0;padding-left:1.25rem;font-size:var(--text-sm);color:var(--text-secondary);'><li>Leer el estado de sesión y <strong>reanudar desde cualquier punto</strong></li><li>Decidir si una tarea necesita flujo largo o corto</li><li>Interrumpir y redirigir si un agente produce output inválido</li><li>Gestionar reintentos (máx 2 por fase)</li><li>Presentar checkpoints al humano con contexto claro</li></ul></div></div></div><div class='lesson'><h3>Los 10 Agentes Especializados</h3><p style='color:var(--text-muted);font-size:var(--text-sm);margin-bottom:1.5rem;'>Pasa el ratón por cada card para ver detalles. Cada agente tiene un nivel de capacidad mínima: <span style='color:var(--blue-400);'>ALTO</span> (no degradable), <span style='color:var(--orange-400);'>MEDIO</span> (degradable con condiciones), <span style='color:var(--green-400);'>BAJO</span> (muy degradable).</p><div style='display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;margin:1.5rem 0;'><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(59,130,246,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--blue-500)';this.style.boxShadow='0 8px 20px rgba(59,130,246,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--blue-400);margin-bottom:0.5rem;'>01-classifier.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Classifier</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Detecta tipo de tarea y diseña el flujo</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--orange-400);font-weight:600;'>Nivel: MEDIO</span><span style='color:var(--text-muted);'>Activa: Siempre</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(34,197,94,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--green-500)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--green-400);margin-bottom:0.5rem;'>02-explorer.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Explorer</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Lee y analiza contexto sin modificar</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--green-400);font-weight:600;'>Nivel: BAJO</span><span style='color:var(--text-muted);'>Activa: Contexto previo</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(59,130,246,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--blue-500)';this.style.boxShadow='0 8px 20px rgba(59,130,246,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--blue-400);margin-bottom:0.5rem;'>03-planner.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Planner</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Diseña estrategia y pasos</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--orange-400);font-weight:600;'>Nivel: MEDIO</span><span style='color:var(--text-muted);'>Activa: Tareas complejas</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(59,130,246,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--blue-500)';this.style.boxShadow='0 8px 20px rgba(59,130,246,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--blue-400);margin-bottom:0.5rem;'>04-spec-writer.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Spec Writer</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Genera spec ejecutable y verificable</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--orange-400);font-weight:600;'>Nivel: MEDIO</span><span style='color:var(--text-muted);'>Activa: Hay que ejecutar</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(249,115,22,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--orange-500)';this.style.boxShadow='0 8px 20px rgba(249,115,22,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--orange-400);margin-bottom:0.5rem;'>05-implementer.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Implementer</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Ejecuta la spec en cualquier dominio</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--orange-400);font-weight:600;'>Nivel: ALTO</span><span style='color:var(--text-muted);'>Activa: Spec aprobada</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(34,197,94,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--green-500)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--green-400);margin-bottom:0.5rem;'>06-reviewer.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Reviewer</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Valida calidad y coherencia del output</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--green-400);font-weight:600;'>Nivel: BAJO</span><span style='color:var(--text-muted);'>Activa: Siempre</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(249,115,22,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--orange-500)';this.style.boxShadow='0 8px 20px rgba(249,115,22,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--orange-400);margin-bottom:0.5rem;'>07-critic.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Critic</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Identifica fallas que el reviewer no vio</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--orange-400);font-weight:600;'>Nivel: ALTO</span><span style='color:var(--text-muted);'>Activa: Alto impacto</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(34,197,94,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--green-500)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--green-400);margin-bottom:0.5rem;'>08-synthesizer.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Synthesizer</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Resume y comunica resultados</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--green-400);font-weight:600;'>Nivel: BAJO</span><span style='color:var(--text-muted);'>Activa: Siempre</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(34,197,94,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--green-500)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--green-400);margin-bottom:0.5rem;'>09-archiver.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Archiver</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Destila aprendizaje permanente</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--green-400);font-weight:600;'>Nivel: BAJO</span><span style='color:var(--text-muted);'>Activa: Tras aprobación</span></div></div><div class='agent-card glass-subtle' style='padding:1.25rem;border:1px solid rgba(34,197,94,0.2);border-radius:8px;transition:all 0.3s;' onmouseover=\"this.style.transform='translateY(-4px)';this.style.borderColor='var(--green-500)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.2)'\" onmouseout=\"this.style.transform='';this.style.borderColor='';this.style.boxShadow=''\"><div class='agent-id' style='font-family:monospace;font-size:var(--text-xs);color:var(--green-400);margin-bottom:0.5rem;'>10-librarian.md</div><div class='agent-name' style='font-weight:700;margin-bottom:0.5rem;'>Librarian</div><div class='agent-desc' style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Mantiene skills, templates e índices</div><div class='agent-meta' style='display:flex;justify-content:space-between;align-items:center;font-size:var(--text-xs);'><span style='color:var(--green-400);font-weight:600;'>Nivel: BAJO</span><span style='color:var(--text-muted);'>Activa: Mantenimiento</span></div></div></div></div><div class='lesson'><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);margin:1.5rem 0;'><div class='concept-label'>Regla de flujo obligatorio</div><p><strong>Todos los agentes del flujo deben pasar siempre, sin excepción.</strong> Si un agente no tiene trabajo sustancial que hacer, emite igualmente su output con veredicto explícito: \"PASS SIN HALLAZGOS\". Nunca se salta un agente silenciosamente.</p></div></div><div class='lesson'><button class='btn btn-ghost' data-prev='mod1'>← Volver</button> <button class='btn btn-primary' data-next='mod3' style='box-shadow:0 0 30px rgba(59,130,246,0.4);'>Siguiente →</button></div>",
+    "quiz": {
+      "questions": [
+        {
+          "id": "q-2-1",
+          "text": "¿Cuál agente decide qué flujo seguir según la tarea?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Orchestrator"
+            },
+            {
+              "value": "b",
+              "text": "Classifier"
+            },
+            {
+              "value": "c",
+              "text": "Planner"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! El classifier detecta el tipo de tarea y diseña el flujo apropiado (largo, medio o corto)."
+        },
+        {
+          "id": "q-2-2",
+          "text": "¿Qué agente NO puede degradarse a un modelo económico?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Implementer"
+            },
+            {
+              "value": "b",
+              "text": "Critic"
+            },
+            {
+              "value": "c",
+              "text": "Orchestrator"
+            }
+          ],
+          "correct": "c",
+          "feedback": "Exacto! El orchestrator requiere nivel ALTO — coordina todo el sistema, gestiona errores y mantiene el estado. Un modelo débil pierde el hilo en ciclos largos."
+        },
+        {
+          "id": "q-2-3",
+          "text": "¿Cuántos agentes especializados hay (sin contar orchestrator)?",
+          "options": [
+            {
+              "value": "a",
+              "text": "8"
+            },
+            {
+              "value": "b",
+              "text": "10"
+            },
+            {
+              "value": "c",
+              "text": "12"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! Hay 10 agentes especializados + 1 orchestrator = 11 en total. Cada uno con una misión única."
+        }
+      ]
+    }
+  },
+  "mod3": {
+    "title": "M3 — Memoria: Skills, Learnings y Clusters",
+    "content": "<div class='lesson'><h3>M3 — El Sistema de Memoria de {{NAME}} Brain</h3><p>Lo que hace a este sistema diferente de un chatbot es que <strong>recuerda</strong>. No dentro de una conversación — sino entre sesiones, para siempre, de forma estructurada.</p><p>La memoria del sistema tiene <strong>3 capas</strong>:</p><div class='grid grid-3 gap-4' style='margin:1.5rem 0;'><div class='concept-card glass-standard glass-refract' style='padding:1.25rem;border:1px solid rgba(59,130,246,0.3);box-shadow:0 8px 32px rgba(59,130,246,0.2);'><div style='font-size:2rem;margin-bottom:0.5rem;'>🛠️</div><div class='concept-label' style='color:var(--blue-400);margin-bottom:0.5rem;'>Skills</div><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Herramientas reutilizables. Protocolos de cómo hacer algo en un dominio específico.</p></div><div class='concept-card glass-standard glass-refract' style='padding:1.25rem;border:1px solid rgba(249,115,22,0.3);box-shadow:0 8px 32px rgba(249,115,22,0.2);'><div style='font-size:2rem;margin-bottom:0.5rem;'>📦</div><div class='concept-label' style='color:var(--orange-400);margin-bottom:0.5rem;'>Learnings</div><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Bloques de conocimiento. Lo que se aprendió en cada ciclo completado.</p></div><div class='concept-card glass-standard glass-refract' style='padding:1.25rem;border:1px solid rgba(34,197,94,0.3);box-shadow:0 8px 32px rgba(34,197,94,0.2);'><div style='font-size:2rem;margin-bottom:0.5rem;'>🏷️</div><div class='concept-label' style='color:var(--green-400);margin-bottom:0.5rem;'>Clusters</div><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Agrupaciones dinámicas. Conectan learnings y proyectos por dominio de conocimiento.</p></div></div></div><div class='lesson'><h3>Skills — Herramientas Reutilizables</h3><p>Un skill es un <strong>protocolo de ejecución</strong> para un tipo de tarea recurrente. Cuando el sistema encuentra una tarea que coincide con un skill activo, lo aplica automáticamente.</p><p>El sistema actual de {{NAME}} Brain tiene <strong>4 skills activos</strong>:</p><div class='glass-subtle' style='margin:1rem 0;padding:1rem;border-radius:8px;overflow-x:auto;'><table style='width:100%;border-collapse:collapse;font-size:var(--text-sm);'><thead><tr style='border-bottom:2px solid rgba(59,130,246,0.3);'><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Skill</th><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Aplica a</th><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Archivo</th></tr></thead><tbody><tr style='border-bottom:1px solid rgba(255,255,255,0.1);'><td style='padding:0.75rem;font-weight:600;'>Software Development</td><td style='padding:0.75rem;color:var(--text-secondary);'>Cualquier tarea de software</td><td style='padding:0.75rem;font-family:monospace;font-size:var(--text-xs);'>software-dev.md</td></tr><tr style='border-bottom:1px solid rgba(255,255,255,0.1);'><td style='padding:0.75rem;font-weight:600;'>Dashboard Development</td><td style='padding:0.75rem;color:var(--text-secondary);'>Dashboards y visualización</td><td style='padding:0.75rem;font-family:monospace;font-size:var(--text-xs);'>dashboard-dev.md</td></tr><tr style='border-bottom:1px solid rgba(255,255,255,0.1);'><td style='padding:0.75rem;font-weight:600;'>Web Deploy</td><td style='padding:0.75rem;color:var(--text-secondary);'>Deploy en shared hosting</td><td style='padding:0.75rem;font-family:monospace;font-size:var(--text-xs);'>web-deploy.md</td></tr><tr><td style='padding:0.75rem;font-weight:600;'>PWA → APK</td><td style='padding:0.75rem;color:var(--text-secondary);'>Apps Android desde HTML+JS</td><td style='padding:0.75rem;font-family:monospace;font-size:var(--text-xs);'>pwa-android.md</td></tr></tbody></table></div><p style='color:var(--text-muted);font-size:var(--text-sm);margin-top:1rem;'>Algunos skills tienen <strong>reaprendizaje activo</strong>: acumulan patrones de proyectos reales y se actualizan automáticamente.</p></div><div class='lesson'><h3>Learnings — Conocimiento de Cada Ciclo</h3><p>Cada tarea completada genera un <strong>learning</strong> en formato Markdown con:</p><ul style='margin:1rem 0;padding-left:1.5rem;'><li><strong>Decisión clave</strong> tomada en la tarea</li><li><strong>Patrón reutilizable</strong> para futuras tareas similares</li><li><strong>Qué funcionó</strong> y qué evitar</li><li><strong>Clusters y proyecto</strong> relacionado</li><li><strong>Skills usados</strong> durante la ejecución</li></ul><p>Los learnings se acumulan y forman una <strong>red neuronal de conocimiento</strong> en tu Obsidian. Cada learning es un nodo conectado a otros por clusters y proyectos.</p><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);margin:1rem 0;'><div class='concept-label'>Índice Inteligente</div><p>El sistema usa <code>agents/learnings/_index.md</code> — una tabla ligera que resume todos los learnings. El orchestrator lee el índice y carga <strong>solo los learnings relevantes</strong> para la tarea actual, ahorrando tokens y mejorando el rendimiento.</p></div></div><div class='lesson'><h3>Clusters — Dominios Dinámicos</h3><p>Los clusters agrupan learnings por dominio. <strong>No son fijos</strong> — se crean cuando aparece un nuevo tipo de trabajo:</p><div class='grid grid-4 gap-2' style='margin:1rem 0;'><span class='badge badge-glass' style='background:rgba(59,130,246,0.2);color:var(--blue-300);padding:0.5rem 0.75rem;border-radius:6px;font-size:var(--text-sm);'>#sistema</span><span class='badge badge-glass' style='background:rgba(59,130,246,0.2);color:var(--blue-300);padding:0.5rem 0.75rem;border-radius:6px;font-size:var(--text-sm);'>#web</span><span class='badge badge-glass' style='background:rgba(59,130,246,0.2);color:var(--blue-300);padding:0.5rem 0.75rem;border-radius:6px;font-size:var(--text-sm);'>#github</span><span class='badge badge-glass' style='background:rgba(249,115,22,0.2);color:var(--orange-300);padding:0.5rem 0.75rem;border-radius:6px;font-size:var(--text-sm);'>#arquitectura-software</span><span class='badge badge-glass' style='background:rgba(34,197,94,0.2);color:var(--green-300);padding:0.5rem 0.75rem;border-radius:6px;font-size:var(--text-sm);'>#datos</span><span class='badge badge-glass' style='background:rgba(168,85,247,0.2);color:var(--purple-300);padding:0.5rem 0.75rem;border-radius:6px;font-size:var(--text-sm);'>#finanzas-tech</span><span class='badge badge-glass' style='background:rgba(236,72,153,0.2);color:var(--pink-300);padding:0.5rem 0.75rem;border-radius:6px;font-size:var(--text-sm);'>#mobile</span></div><p style='color:var(--text-muted);font-size:var(--text-sm);'>Cuando el sistema encuentra un dominio nuevo que no encaja en clusters existentes, crea uno automáticamente. Así el sistema evoluciona con tu trabajo.</p></div><div class='lesson'><button class='btn btn-ghost' data-prev='mod2'>← Volver</button> <button class='btn btn-primary' data-next='mod4' style='box-shadow:0 0 30px rgba(59,130,246,0.4);'>Siguiente →</button></div>",
+    "quiz": {
+      "questions": [
+        {
+          "id": "q-3-1",
+          "text": "¿Qué es un 'skill' en este sistema?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Una habilidad del usuario"
+            },
+            {
+              "value": "b",
+              "text": "Un protocolo de ejecución para tareas recurrentes"
+            },
+            {
+              "value": "c",
+              "text": "Un tipo de agente"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! Un skill es un protocolo que el sistema aplica automáticamente cuando detecta una tarea compatible. Ej: software-dev.md para cualquier tarea de código."
+        },
+        {
+          "id": "q-3-2",
+          "text": "¿Cuándo se crea un nuevo cluster?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Cuando el usuario lo define manualmente"
+            },
+            {
+              "value": "b",
+              "text": "Cuando aparece un nuevo dominio de trabajo"
+            },
+            {
+              "value": "c",
+              "text": "Cada vez que se completa una tarea"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Exacto! Los clusters son dinámicos — se crean cuando el sistema encuentra un dominio nuevo que no encaja en clusters existentes."
+        },
+        {
+          "id": "q-3-3",
+          "text": "¿Qué es el _index.md de learnings?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Una lista de todos los archivos learning"
+            },
+            {
+              "value": "b",
+              "text": "Una tabla ligera con señal de relevancia para carga bajo demanda"
+            },
+            {
+              "value": "c",
+              "text": "Un resumen de cada learning completo"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! El _index.md es una tabla que resume cada learning con: fecha, tarea, clusters, patrón, señal de relevancia y cuándo cargar. El orchestrator lo lee y carga solo los learnings relevantes."
+        }
+      ]
+    }
+  },
+  "mod4": {
+    "title": "M4 — Setup en 10 Minutos",
+    "content": "<div class='lesson'><h3>M4 — Setup en 10 Minutos</h3><p>Solo necesitas <strong>3 cosas</strong> para empezar:</p><div class='grid grid-3 gap-4' style='margin:1.5rem 0;'><div class='card glass-subtle' style='padding:1.25rem;text-align:center;border:1px solid rgba(59,130,246,0.2);'><div style='font-size:2.5rem;margin-bottom:0.5rem;'>📓</div><h4 style='margin-bottom:0.5rem;'>1. Obsidian</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Tu base de conocimiento. Gratuito.</p></div><div class='card glass-subtle' style='padding:1.25rem;text-align:center;border:1px solid rgba(59,130,246,0.2);'><div style='font-size:2.5rem;margin-bottom:0.5rem;'>🤖</div><h4 style='margin-bottom:0.5rem;'>2. OpenCode</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Tu agente IA. Gratuito.</p></div><div class='card glass-subtle' style='padding:1.25rem;text-align:center;border:1px solid rgba(59,130,246,0.2);'><div style='font-size:2.5rem;margin-bottom:0.5rem;'>📁</div><h4 style='margin-bottom:0.5rem;'>3. Esta Carpeta</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>El sistema de agentes.</p></div></div></div><div class='lesson'><h3>Descargas Directas</h3><div class='glass-subtle' style='margin:1rem 0;padding:1rem;border-radius:8px;'><table style='width:100%;border-collapse:collapse;font-size:var(--text-sm);'><thead><tr style='border-bottom:2px solid rgba(59,130,246,0.3);'><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Herramienta</th><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Descargar</th><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Tamaño</th></tr></thead><tbody><tr><td style='padding:0.75rem;font-weight:600;'>Obsidian</td><td style='padding:0.75rem;'><a href='https://obsidian.md/download' target='_blank' style='color:var(--blue-400);text-decoration:underline;'>obsidian.md/download</a></td><td style='padding:0.75rem;color:var(--text-muted);'>~100 MB</td></tr><tr><td style='padding:0.75rem;font-weight:600;'>OpenCode CLI</td><td style='padding:0.75rem;'><a href='https://github.com/anomalyco/opencode/releases' target='_blank' style='color:var(--blue-400);text-decoration:underline;'>GitHub Releases</a></td><td style='padding:0.75rem;color:var(--text-muted);'>~45 MB</td></tr></tbody></table></div><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);margin:1rem 0;'><div class='concept-label'>Instalación Rápida OpenCode</div><p style='font-family:monospace;font-size:var(--text-sm);background:rgba(0,0,0,0.2);padding:0.5rem 0.75rem;border-radius:4px;display:inline-block;margin-top:0.5rem;'>npm i -g opencode-ai@latest</p><p style='font-size:var(--text-sm);color:var(--text-secondary);margin-top:0.5rem;'>O descarga el ejecutable desde GitHub Releases.</p></div></div><div class='lesson'><h3>Archivos del Sistema (por si los necesitas)</h3><p>Descarga estos archivos si quieres montar el sistema desde cero:</p><div class='glass-subtle' style='margin:1rem 0;padding:1rem;border-radius:8px;'><table style='width:100%;border-collapse:collapse;font-size:var(--text-sm);'><thead><tr style='border-bottom:2px solid rgba(59,130,246,0.3);'><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Archivo</th><th style='padding:0.75rem;text-align:left;color:var(--blue-400);'>Función</th></tr></thead><tbody><tr><td style='padding:0.75rem;font-family:monospace;'>AGENTS.md</td><td style='padding:0.75rem;color:var(--text-secondary);'>Documentación principal</td></tr><tr><td style='padding:0.75rem;font-family:monospace;'>session-prompt.md</td><td style='padding:0.75rem;color:var(--text-secondary);'>Prompt de activación</td></tr><tr><td style='padding:0.75rem;font-family:monospace;'>_system-config.md</td><td style='padding:0.75rem;color:var(--text-secondary);'>Configuración portable</td></tr></tbody></table></div><p style='color:var(--text-muted);font-size:var(--text-sm);'><em>Los demás archivos (agentes, skills, learnings) se generan automáticamente con el sistema.</em></p></div><div class='lesson'><h3>4 Pasos para Activar</h3><div class='grid grid-1 gap-3' style='margin:1.5rem 0;'><div class='card glass-subtle' style='padding:1rem;border-left:3px solid var(--blue-500);display:flex;align-items:flex-start;gap:1rem;'><div style='background:rgba(59,130,246,0.2);color:var(--blue-300);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;'>1</div><div><h4 style='margin-bottom:0.25rem;'>Instala Obsidian</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Descarga, instala y crea un vault nuevo llamado <code>{{NAME}} Brain</code>.</p></div></div><div class='card glass-subtle' style='padding:1rem;border-left:3px solid var(--orange-500);display:flex;align-items:flex-start;gap:1rem;'><div style='background:rgba(249,115,22,0.2);color:var(--orange-300);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;'>2</div><div><h4 style='margin-bottom:0.25rem;'>Copia los Archivos</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Copia la carpeta <code>MASTERTMIND/</code> completa dentro de tu vault.</p></div></div><div class='card glass-subtle' style='padding:1rem;border-left:3px solid var(--green-500);display:flex;align-items:flex-start;gap:1rem;'><div style='background:rgba(34,197,94,0.2);color:var(--green-300);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;'>3</div><div><h4 style='margin-bottom:0.25rem;'>Abre OpenCode</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>En tu terminal, navega al vault y ejecuta <code>opencode</code>.</p></div></div><div class='card glass-subtle' style='padding:1rem;border-left:3px solid var(--purple-500);display:flex;align-items:flex-start;gap:1rem;'><div style='background:rgba(168,85,247,0.2);color:var(--purple-300);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;'>4</div><div><h4 style='margin-bottom:0.25rem;'>Pega el Session Prompt</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);'>Copia el contenido de <code>session-prompt.md</code> y pégalo en OpenCode. El sistema está activo.</p></div></div></div></div><div class='lesson'><button class='btn btn-ghost' data-prev='mod3'>← Volver</button> <button class='btn btn-primary' data-next='mod5' style='box-shadow:0 0 30px rgba(59,130,246,0.4);'>Siguiente →</button></div>",
+    "quiz": {
+      "questions": [
+        {
+          "id": "q-4-1",
+          "text": "¿Cuál es el primer paso del setup?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Copiar archivos MASTERTMIND"
+            },
+            {
+              "value": "b",
+              "text": "Instalar Obsidian y crear vault"
+            },
+            {
+              "value": "c",
+              "text": "Ejecutar OpenCode"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! Primero necesitas Obsidian y un vault donde vivirán los archivos. Sin vault, no hay donde guardar el conocimiento."
+        },
+        {
+          "id": "q-4-2",
+          "text": "¿Qué archivo activa el sistema en OpenCode?",
+          "options": [
+            {
+              "value": "a",
+              "text": "AGENTS.md"
+            },
+            {
+              "value": "b",
+              "text": "_system-config.md"
+            },
+            {
+              "value": "c",
+              "text": "session-prompt.md"
+            }
+          ],
+          "correct": "c",
+          "feedback": "Exacto! session-prompt.md contiene las instrucciones para cargar todos los archivos del sistema en el orden correcto."
+        }
+      ]
+    }
+  },
+  "mod5": {
+    "title": "M5 — Tu Primer Ciclo",
+    "content": "<div class='lesson'><h3>M5 — Tu Primer Ciclo con {{NAME}} Brain</h3><p>Ya entiendes la arquitectura, los agentes, la memoria y el setup. Ahora vamos a recorrer un <strong>ciclo completo</strong> paso a paso, como si estuvieras usando el sistema por primera vez.</p><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);margin:1.5rem 0;'><div class='concept-label'>Qué es un Ciclo</div><p>Un ciclo es el recorrido completo de una tarea: desde que la das al sistema hasta que el aprendizaje queda archivado. Cada ciclo genera conocimiento que el sistema reutiliza en futuras tareas.</p></div></div><div class='lesson'><h3>Paso 0 — Activar el Sistema</h3><p>Pega el prompt de activación de <code>session-prompt.md</code>:</p><pre style='background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;overflow-x:auto;font-family:monospace;font-size:var(--text-sm);border:1px solid rgba(59,130,246,0.2);'>Lee los siguientes archivos en este orden exacto:\n1. AGENTS.md\n2. agents/00-orchestrator.md\n3. agents/state/_system-config.md\n4. agents/state/_session-state.md\n5. agents/skills/_index.md\n6. agents/learnings/_index.md\n7. agents/projects/_clusters.md\n\nIMPORTANTE: NO cargues learnings individuales todavía.\nLos learnings completos se cargan solo cuando la señal\nde relevancia del índice coincide con la tarea activa.</pre><p style='color:var(--text-muted);font-size:var(--text-sm);margin-top:1rem;'>El sistema responde:</p><pre style='background:rgba(34,197,94,0.1);padding:1rem;border-radius:8px;overflow-x:auto;font-family:monospace;font-size:var(--text-sm);border:1px solid rgba(34,197,94,0.2);color:var(--green-300);'>SISTEMA ACTIVO\n──────────────\nSkills cargados: 4 → software-dev, dashboard-dev, web-deploy, pwa-android\nLearnings en índice: 11 (ninguno cargado completo aún)\nClusters activos: 7 → #sistema, #github, #web, #arquitectura-software, #datos, #finanzas-tech, #mobile\nÚltima tarea completada: [nombre-tarea]\nEstado: en reposo\n\nEsperando tarea.</pre></div><div class='lesson'><h3>Paso 1 — Dar tu Tarea</h3><p>Tienes dos opciones:</p><div class='grid grid-2 gap-4' style='margin:1.5rem 0;'><div class='card glass-subtle' style='padding:1.25rem;border:1px solid rgba(59,130,246,0.2);'><h4 style='margin-bottom:0.5rem;color:var(--blue-400);'>Opción A — Lenguaje Natural</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>La más común. Simplemente escribe lo que quieres:</p><pre style='background:rgba(0,0,0,0.2);padding:0.75rem;border-radius:4px;font-family:monospace;font-size:var(--text-xs);white-space:pre-wrap;'>\"{{EJEMPLO_TAREA_PERFIL}}\"</pre></div><div class='card glass-subtle' style='padding:1.25rem;border:1px solid rgba(249,115,22,0.2);'><h4 style='margin-bottom:0.5rem;color:var(--orange-400);'>Opción B — Task Intake</h4><p style='font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:0.75rem;'>Para tareas complejas. Rellena <code>agents/templates/task-intake.md</code> con detalles y pégalo.</p></div></div></div><div class='lesson'><h3>Paso 2 — Seguir el Flujo</h3><p>El orchestrator coordinará los agentes necesarios. Tú solo:</p><ul style='margin:1rem 0;padding-left:1.5rem;'><li><strong>Aprueba la SPEC</strong> cuando aparezca (o da feedback)</li><li><strong>Espera el checkpoint</strong> de SYNTHESIZE</li><li><strong>Aprueba el resultado final</strong> con ✅</li></ul><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);margin:1rem 0;'><div class='concept-label'>Checkpoints del Humano</div><p>Solo intervienes en 2 puntos: (1) después de SPEC — apruebas la especificación antes de que el implementer ejecute, (2) después de SYNTHESIZE — apruebas el resultado antes de que el archiver archive.</p></div></div><div class='lesson'><h3>Paso 3 — Archivar el Learning</h3><p>El archiver creará automáticamente un archivo en <code>agents/learnings/</code> con:</p><ul style='margin:1rem 0;padding-left:1.5rem;'><li>Lo que funcionó</li><li>Qué evitar la próxima vez</li><li>Patrones reutilizables</li><li>Clusters y conexiones</li></ul><p>¡Listo! Tu sistema acaba de aprender algo nuevo.</p></div><div class='lesson'><h3>¡Felicidades!</h3><p>Has completado el recorrido. Ahora tienes:</p><ul style='margin:1rem 0;padding-left:1.5rem;'><li>Un sistema de agentes funcional</li><li>Comprensión de cómo trabaja cada pieza</li><li>La capacidad de adaptarlo a cualquier tarea</li></ul><div class='concept-card glass-standard glass-refract' style='border:1px solid rgba(59,130,246,0.3);margin:1.5rem 0;'><div class='concept-label'>Siguiente Paso</div><p>Abre OpenCode en tu vault y pega el session prompt. Tu <strong>{{NAME}} Brain</strong> te está esperando.</p></div></div><div class='lesson'><button class='btn btn-ghost' data-prev='mod4'>← Volver</button> <button class='btn btn-accent btn-lg' id='finish-btn' style='box-shadow:0 0 40px rgba(59,130,246,0.5);transition:all 0.3s;' onmouseover=\"this.style.boxShadow='0 0 60px rgba(59,130,246,0.7)';this.style.transform='translateY(-2px)'\" onmouseout=\"this.style.boxShadow='0 0 40px rgba(59,130,246,0.5)';this.style.transform=''\">🎉 Completar Recorrido</button></div>",
+    "quiz": {
+      "questions": [
+        {
+          "id": "q-5-1",
+          "text": "¿En qué punto el humano aprueba antes de implementar?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Después de EXPLORE"
+            },
+            {
+              "value": "b",
+              "text": "Después de SPEC"
+            },
+            {
+              "value": "c",
+              "text": "Después de PLAN"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! La spec debe aprobarse antes de que el implementer ejecute. Esto evita trabajo incorrecto o mal entendido."
+        },
+        {
+          "id": "q-5-2",
+          "text": "¿Qué genera el archiver al final de un ciclo?",
+          "options": [
+            {
+              "value": "a",
+              "text": "Un resumen en pantalla"
+            },
+            {
+              "value": "b",
+              "text": "Un archivo learning en agents/learnings/"
+            },
+            {
+              "value": "c",
+              "text": "Un commit en GitHub"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Exacto! El archiver crea un learning permanente con lo aprendido en el ciclo. Este learning será reutilizable en futuras tareas similares."
+        },
+        {
+          "id": "q-5-3",
+          "text": "¿Cuántos checkpoints tiene el humano por ciclo?",
+          "options": [
+            {
+              "value": "a",
+              "text": "1"
+            },
+            {
+              "value": "b",
+              "text": "2"
+            },
+            {
+              "value": "c",
+              "text": "3"
+            }
+          ],
+          "correct": "b",
+          "feedback": "Correcto! Solo 2 checkpoints: (1) después de SPEC — apruebas especificación, (2) después de SYNTHESIZE — apruebas resultado final."
+        }
+      ]
+    }
+  }
+}
