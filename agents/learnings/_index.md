@@ -68,6 +68,13 @@ El librarian los moverá a learnings/archive/ con aprobación humana.
 | 2026-03-25 | leccion-trabajar-ordenado-por-partes | conocimiento | #sistema | [[learning-platform]] | iterative-development-with-context-limits | Lección principal: división por fases, learnings archivados, _index.md como puerta de entrada, nunca exceder contexto, planificar y volver | SIEMPRE en proyectos complejos — ventaja competitiva del sistema | permanente | [[2026-03-25-leccion-trabajar-ordenado-por-partes]] |
 | 2026-03-25 | cierre-sesion-archivar-proyecto | operaciones | #sistema #web | [[learning-platform]] | session-archive-for-retake | Cierre completo: 20+ learnings archivados, hub actualizado, roadmap FASE 3 listo, sandbox archivado, instrucciones retomar | Al cerrar sesión de trabajo — archivar para retomar sin perder contexto | lento | [[2026-03-25-cierre-sesion-archivar-proyecto]] |
 | 2026-03-26 | migracion-v3-multi-agente-simplificacion | conocimiento | #sistema | — | layer-separation-no-duplication | Sistema multi-agente con dos capas (documental + ejecutable): separar responsabilidades sin duplicar contenido entre capas | Solo si la tarea es evolución del sistema de agentes o arquitectura multi-capa | permanente | [[2026-03-26-migracion-v3-multi-agente-simplificacion]] |
+| 2026-03-26 | github-repo-usar-carpeta-existente | operaciones | #github #sistema | [[learning-platform]] | use-existing-project-structure | Crear un nuevo repositorio o proyecto que necesita carpeta local | Solo si la tarea es crear un repositorio o proyecto nuevo | lento | [[2026-03-26-github-repo-usar-carpeta-existente]] |
+| 2026-03-26 | readme-espanol-prioritario | operaciones | #sistema #github | [[learning-platform]] | readme-native-language-first | Crear cualquier repositorio o documentación pública para el sistema Ntizar | Siempre al crear repos o documentación pública Ntizar | permanente | [[2026-03-26-readme-espanol-prioritario]] |
+| 2026-03-26 | github-repo-v3-completo | conocimiento | #github #sistema | [[learning-platform]] | repo-as-documentation-product | Crear repositorio público que sirva como producto de documentación y marketing | Solo si la tarea es crear o mejorar un repo público | lento | [[2026-03-26-github-repo-v3-completo]] |
+| 2026-03-26 | svg-banner-desde-design-system | software | #web #sistema | [[learning-platform]] | svg-banner-from-css-variables | Necesitar banner o asset visual para README que sea coherente con el design system | Si la tarea necesita banner/asset visual para repo o web | normal | [[2026-03-26-svg-banner-desde-design-system]] |
+| 2026-03-26 | windows-bash-path-copy-pattern | software | #sistema #github | — | windows-bash-forward-slash-copy | Copiar archivos en entorno bash-on-Windows (OpenCode, Git Bash, WSL) | Siempre que se copien archivos en bash sobre Windows | normal | [[2026-03-26-windows-bash-path-copy-pattern]] |
+| 2026-03-26 | git-nested-cleanup-agents-md | operaciones | #github #sistema | — | clean-nested-git-before-repo-init | Crear repositorio nuevo a partir de archivos existentes de un vault Obsidian o proyecto | Solo si se crea repo nuevo desde archivos existentes | normal | [[2026-03-26-git-nested-cleanup-agents-md]] |
+| 2026-03-26 | design-system-documentar-en-readme | conocimiento | #web #sistema | [[learning-platform]] | design-system-visibility-in-repo | Proyecto con design system propio que necesita visibilidad en el README | Si el proyecto tiene design system y se está creando/mejorando README | lento | [[2026-03-26-design-system-documentar-en-readme]] |
 
 ---
 
@@ -79,6 +86,7 @@ Estos learnings tienen decay `permanente` (R=1.0 siempre) y `cuando_cargar: Siem
 - [[2026-03-25-leccion-trabajar-ordenado-por-partes]] — iterative-development → SIEMPRE en proyectos complejos
 - [[2026-03-24-sistema-v2-index-inteligente]] — on-demand-context-loading → en mantenimiento del sistema
 - [[2026-03-26-migracion-v3-multi-agente-simplificacion]] — layer-separation-no-duplication → en evolución del sistema
+- [[2026-03-26-readme-espanol-prioritario]] — readme-native-language-first → en cualquier repo/doc pública Ntizar
 
 ## Learnings de alta prioridad por dominio (cargar cuando la señal coincida)
 
