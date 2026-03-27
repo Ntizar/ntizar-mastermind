@@ -1,165 +1,69 @@
 {
-  "version": "2.0",
-  "created": "2026-03-25",
+  "version": "3.0",
+  "created": "2026-03-27",
   "profiles": {
-    "no-programador": {
-      "id": "no-programador",
-      "nombre": "No-programador",
-      "icono": "💼",
-      "descripcion": "Gente de negocios, writers, operadores. Quieres automatizar tareas sin escribir código.",
+    "con-experiencia": {
+      "id": "con-experiencia",
+      "nombre": "Con experiencia programando",
+      "icono": "terminal",
+      "color": "blue",
+      "descripcion": "Ya sabes programar. Quieres entender el sistema rapido, montarlo y empezar a usarlo como herramienta de trabajo real.",
+      "subtitulo": "Fast track para devs",
       "vocabulario": {
-        "evitar": ["API", "CORS", "deploy", "framework", "refactorizar", "debuggear"],
-        "usar": ["herramienta", "conectar", "publicar", "estructura", "corregir", "revisar"],
-        "explicaciones_extra": true,
-        "analogias": true
-      },
-      "ejemplos_dominio": ["escritura", "negocios", "operaciones", "documentos"],
-      "casos_uso": [
-        "Crear SOPs de procesos",
-        "Automatizar reportes semanales",
-        "Analizar datos de ventas",
-        "Escribir documentos legales",
-        "Organizar notas y apuntes"
-      ],
-      "duracion_modulos": {
-        "M0": "5 min",
-        "M1": "25 min",
-        "M2": "30 min",
-        "M3": "25 min",
-        "M4": "30 min",
-        "M5": "30 min"
-      },
-      "duracion_total": "~2h 25min",
-      "dificultad_percibida": "media",
-      "recomendaciones": [
-        "Usa analogías del mundo real",
-        "Evita jerga técnica sin explicar",
-        "Enfócate en resultados, no en implementación"
-      ]
-    },
-    "junior-dev": {
-      "id": "junior-dev",
-      "nombre": "Programador Junior",
-      "icono": "👨‍💻",
-      "descripcion": "Programadores que quieren ser más productivos con IA. Sabes código pero quieres trabajar mejor.",
-      "vocabulario": {
-        "evitar": [],
-        "usar": ["API", "deploy", "framework", "refactorizar", "debuggear", "tests", "CI/CD"],
+        "nivel": "tecnico",
+        "usar": ["API", "deploy", "refactorizar", "debuggear", "tests", "CI/CD", "pipeline", "CLI", "vault", "markdown"],
         "explicaciones_extra": false,
         "analogias": false
       },
-      "ejemplos_dominio": ["software", "datos", "github", "web"],
+      "ejemplos_dominio": ["software", "arquitectura", "datos", "automatizacion"],
       "casos_uso": [
-        "Debuggear código con el critic",
-        "Refactorizar módulo legacy",
-        "Crear tests automatizados",
-        "Documentar código automáticamente",
-        "Generar boilerplate de proyectos"
+        "Debuggear codigo complejo con el critic como segundo par de ojos",
+        "Refactorizar un modulo legacy con spec verificable",
+        "Generar tests automatizados con cobertura real",
+        "Crear pipelines de datos con trazabilidad completa",
+        "Documentar codigo automaticamente con el synthesizer"
       ],
       "duracion_modulos": {
-        "M0": "5 min",
-        "M1": "20 min",
-        "M2": "25 min",
-        "M3": "20 min",
-        "M4": "20 min",
-        "M5": "25 min"
+        "M0": "3 min",
+        "M1": "15 min",
+        "M2": "20 min",
+        "M3": "15 min",
+        "M4": "15 min",
+        "M5": "22 min"
       },
-      "duracion_total": "~1h 55min",
+      "duracion_total": "~1h 30min",
+      "timer_seconds": 5400,
       "dificultad_percibida": "baja",
+      "ritmo": "rapido",
       "recomendaciones": [
-        "Usa terminología técnica directamente",
-        "Enfócate en integración con herramientas existentes",
-        "Muestra ejemplos de código real"
-      ]
-    },
-    "consultor": {
-      "id": "consultor",
-      "nombre": "Consultor / Freelance",
-      "icono": "🎯",
-      "descripcion": "Gestionas múltiples proyectos y clientes. Necesitas eficiencia y trazabilidad.",
-      "vocabulario": {
-        "evitar": [],
-        "usar": ["cliente", "proyecto", "entregable", "deadline", "hubs", "clusters"],
-        "explicaciones_extra": false,
-        "analogias": true
-      },
-      "ejemplos_dominio": ["negocios", "datos", "estrategia", "operaciones"],
-      "casos_uso": [
-        "Análisis de datos de cliente (CSV → insights)",
-        "Generar propuestas comerciales",
-        "Seguir múltiples proyectos con hubs",
-        "Crear documentación para clientes",
-        "Automatizar reportes de estado"
+        "Va directo al grano, sin rodeos",
+        "Terminologia tecnica sin filtro",
+        "Ejemplos de codigo real en cada modulo",
+        "Enfocado en productividad inmediata"
       ],
-      "duracion_modulos": {
-        "M0": "5 min",
-        "M1": "20 min",
-        "M2": "25 min",
-        "M3": "20 min",
-        "M4": "25 min",
-        "M5": "25 min"
-      },
-      "duracion_total": "~2h",
-      "dificultad_percibida": "media",
-      "recomendaciones": [
-        "Enfócate en multi-proyecto",
-        "Muestra cómo organizar por cliente",
-        "Destaca la trazabilidad y memoria"
-      ]
+      "easter_egg": "Teclea 'sudo brain' en cualquier momento para un bonus secreto"
     },
-    "equipo-pequeno": {
-      "id": "equipo-pequeno",
-      "nombre": "Equipo Pequeño",
-      "icono": "👥",
-      "descripcion": "Startups de 2-10 personas. Necesitas colaboración y conocimiento compartido.",
+    "sin-experiencia": {
+      "id": "sin-experiencia",
+      "nombre": "Sin experiencia programando",
+      "icono": "rocket",
+      "color": "orange",
+      "descripcion": "No necesitas saber programar. Este sistema trabaja con lenguaje natural. Te ensenamos desde cero con ejemplos reales de tu dia a dia.",
+      "subtitulo": "De cero a sistema propio",
       "vocabulario": {
-        "evitar": [],
-        "usar": ["equipo", "colaboración", "compartir", "onboarding", "SOP", "wiki"],
-        "explicaciones_extra": false,
-        "analogias": true
-      },
-      "ejemplos_dominio": ["operaciones", "conocimiento", "estrategia", "software"],
-      "casos_uso": [
-        "Onboarding de nuevo miembro",
-        "Retrospectiva de sprint",
-        "Documentación compartida",
-        "Base de conocimiento del equipo",
-        "Automatizar procesos internos"
-      ],
-      "duracion_modulos": {
-        "M0": "5 min",
-        "M1": "20 min",
-        "M2": "25 min",
-        "M3": "25 min",
-        "M4": "25 min",
-        "M5": "30 min"
-      },
-      "duracion_total": "~2h 10min",
-      "dificultad_percibida": "media",
-      "recomendaciones": [
-        "Enfócate en conocimiento compartido",
-        "Muestra cómo colaborar en equipo",
-        "Destaca la memoria institucional"
-      ]
-    },
-    "estudiante": {
-      "id": "estudiante",
-      "nombre": "Estudiante",
-      "icono": "📚",
-      "descripcion": "Aprendiendo a trabajar con IA. Quieres estudiar mejor y ser más eficiente.",
-      "vocabulario": {
-        "evitar": ["deploy", "CI/CD", "producción"],
-        "usar": ["aprender", "estudiar", "organizar", "resumir", "apuntes", "investigación"],
+        "nivel": "natural",
+        "usar": ["herramienta", "conectar", "publicar", "organizar", "automatizar", "tarea", "resultado"],
+        "evitar": ["API", "CORS", "deploy", "framework", "refactorizar", "debuggear", "pipeline"],
         "explicaciones_extra": true,
         "analogias": true
       },
-      "ejemplos_dominio": ["conocimiento", "research", "escritura", "analisis"],
+      "ejemplos_dominio": ["organizacion", "escritura", "negocios", "creatividad"],
       "casos_uso": [
-        "Resumir papers académicos",
-        "Organizar apuntes de clase",
-        "Preparar presentaciones",
-        "Investigar temas complejos",
-        "Escribir ensayos y trabajos"
+        "Crear documentos profesionales dictandole al sistema que quieres",
+        "Organizar tu caos de notas en un sistema que recuerda todo",
+        "Automatizar tareas repetitivas sin escribir una linea de codigo",
+        "Analizar datos (ventas, encuestas, CSVs) y obtener insights",
+        "Generar presentaciones, reportes y SOPs en minutos"
       ],
       "duracion_modulos": {
         "M0": "5 min",
@@ -167,21 +71,25 @@
         "M2": "30 min",
         "M3": "25 min",
         "M4": "30 min",
-        "M5": "30 min"
+        "M5": "25 min"
       },
-      "duracion_total": "~2h 25min",
-      "dificultad_percibida": "media-alta",
+      "duracion_total": "~2h 30min",
+      "timer_seconds": 9000,
+      "dificultad_percibida": "media",
+      "ritmo": "detallado",
       "recomendaciones": [
-        "Usa ejemplos académicos",
-        "Explica conceptos desde cero",
-        "Enfócate en aprendizaje y organización"
-      ]
+        "Explicaciones paso a paso con analogias",
+        "Cero jerga tecnica sin explicar primero",
+        "Enfocado en resultados tangibles",
+        "Mas tiempo para absorber cada concepto"
+      ],
+      "easter_egg": "Haz click 5 veces rapido en el logo para una sorpresa"
     }
   },
   "common": {
-    "modulos_compartidos": ["M0", "M1", "M2"],
-    "modulos_especificos": ["M3", "M4", "M5"],
+    "modulos_compartidos": ["M0", "M1", "M2", "M3", "M4", "M5"],
     "sistema_nombre": "Brain",
-    "promesa": "En 2 horas tienes tu sistema operativo de inteligencia funcionando"
+    "promesa_con_exp": "En 1 hora y media tienes un sistema de agentes IA operativo que multiplica tu productividad",
+    "promesa_sin_exp": "En 2 horas y media tienes tu propio sistema de inteligencia que trabaja para ti"
   }
 }
