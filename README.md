@@ -245,7 +245,7 @@ ntizar-mastermind/
 |   |-- agents/                  # Configs de agentes (YAML + instrucciones minimas)
 |   |-- commands/                # Comandos slash (/ntizar-start, etc.)
 |
-|-- learning-platform/           # App web que ensena el sistema (WIP)
+|-- learning-platform/           # Brain Academy — plataforma de aprendizaje interactiva
 |-- design-system/               # Framework CSS Liquid Glass (1,379 lineas)
 |-- docs/                        # Documentacion extendida
 ```
@@ -269,18 +269,21 @@ Los skills se cargan **bajo demanda** -- solo cuando el clasificador detecta un 
 
 ## Plataforma de Aprendizaje
 
-> **Estado:** Fase 3 en desarrollo
+> **Brain Academy v3.0** — Completa y operativa
 
-Una plataforma web interactiva que ensena a cualquier persona como construir y usar el sistema Ntizar Mastermind. Disenada para **5 perfiles de usuario** -- desde no-programadores hasta equipos de desarrollo.
+Una plataforma web interactiva que ensena a cualquier persona como construir y usar el sistema Ntizar Mastermind. Disenada para **2 perfiles** — con y sin experiencia como programador — con contenido adaptativo, tono disruptivo y gamificacion real.
 
-**Preview en vivo:** [learning-platform-roan-six.vercel.app](https://learning-platform-roan-six.vercel.app)
+**En vivo:** [ntizar-brain-learning.vercel.app](https://ntizar-brain-learning.vercel.app)
 
 Caracteristicas:
-- 9 modulos progresivos (M0-M8)
-- Contenido adaptado al perfil del usuario
-- Gamificacion con XP, niveles y badges
-- Interfaz Liquid Glass UI
-- Exportacion de certificado en PDF
+- 6 modulos interactivos (M0-M5) con contenido narrativo y disruptivo
+- 2 perfiles: "Con experiencia" (~1h 30min) y "Sin experiencia" (~2h 30min)
+- Quizzes funcionales con feedback inmediato
+- Gamificacion: XP, badges, confetti, notificaciones
+- Persistencia de estado (progreso guardado en localStorage)
+- Generacion de guia PDF con diseno Ntizar (4 paginas, tema oscuro)
+- Interfaz Liquid Glass UI con animaciones premium
+- Contenido personalizado con el nombre del usuario
 
 ---
 
@@ -294,7 +297,7 @@ Caracteristicas:
 - [x] 4 skills de dominio
 - [x] 32+ aprendizajes indexados
 - [x] Instalacion portable con verificacion
-- [x] Plataforma de aprendizaje (Fase 2 completa)
+- [x] Plataforma de aprendizaje Brain Academy v3.0 (completa)
 - [x] Design System Liquid Glass CSS (1,379 lineas)
 
 ### Siguiente: v3.1 -- Optimizacion MCP Multi-Agente
