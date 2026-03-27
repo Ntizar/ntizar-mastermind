@@ -236,7 +236,7 @@ ntizar-mastermind/
 |   |-- agents/                  # Agent configs (YAML + minimal instructions)
 |   |-- commands/                # Slash commands (/ntizar-start, etc.)
 |
-|-- learning-platform/           # Web app teaching the system (WIP)
+|-- learning-platform/           # Brain Academy — interactive learning platform
 |-- design-system/               # Liquid Glass CSS framework (1,379 lines)
 |-- docs/                        # Extended documentation
 ```
@@ -260,18 +260,21 @@ Skills are loaded **on-demand** -- only when the classifier detects a matching d
 
 ## Learning Platform
 
-> **Status:** Phase 3 in development
+> **Brain Academy v3.0** — Complete and operational
 
-A web-based interactive platform that teaches anyone how to build and use the Ntizar Mastermind system. Designed for **5 user profiles** -- from non-programmers to development teams.
+A web-based interactive platform that teaches anyone how to build and use the Ntizar Mastermind system. Designed for **2 profiles** — with and without programming experience — featuring adaptive content, a disruptive tone, and real gamification.
 
-**Live preview:** [learning-platform-roan-six.vercel.app](https://learning-platform-roan-six.vercel.app)
+**Live:** [ntizar-brain-learning.vercel.app](https://ntizar-brain-learning.vercel.app)
 
 Features:
-- 9 progressive modules (M0-M8)
-- Profile-adaptive content and vocabulary
-- Gamification with XP, levels, and badges
-- Liquid Glass UI interface
-- PDF certificate export
+- 6 interactive modules (M0-M5) with narrative, disruptive content
+- 2 profiles: "With experience" (~1h 30min) and "Without experience" (~2h 30min)
+- Functional quizzes with immediate feedback
+- Gamification: XP, badges, confetti, notifications
+- State persistence (progress saved in localStorage)
+- PDF guide generation with Ntizar design (4 pages, dark theme)
+- Liquid Glass UI interface with premium animations
+- Personalized content using the user's name
 
 ---
 
@@ -285,7 +288,7 @@ Features:
 - [x] 4 domain skills
 - [x] 32+ learnings indexed
 - [x] Portable installation with verification
-- [x] Learning platform (Phase 2 complete)
+- [x] Learning platform Brain Academy v3.0 (complete)
 - [x] Liquid Glass CSS Design System (1,379 lines)
 
 ### Next: v3.1 -- MCP Multi-Agent Optimization
